@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 mt-4" *ngFor="let item of coffee">
+      <div class="card">
+        <img src="{{ item.link }}" class="card-img-top" alt="" />
+        <div class="card-body">
+          <h4 class="card-title">{{ item.name }}</h4>
+          <p class="card-text">{{item.method}} -- {{ item.weight }} -- {{ item.price }}pln</p>
+          <a mat-raised-button color="light">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
