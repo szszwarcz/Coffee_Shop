@@ -19,6 +19,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { LearnComponent } from './learn/learn.component';
+import { BrewingMethodsComponent } from './brewing-methods/brewing-methods.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { LearnComponent } from './learn/learn.component';
     AboutUsComponent,
     LoginComponent,
     FooterComponent,
-    LearnComponent
+    LearnComponent,
+    BrewingMethodsComponent
     
   ],
   imports: [
