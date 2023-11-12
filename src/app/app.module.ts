@@ -18,6 +18,8 @@ import { ShopComponent } from './shop/shop.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
+import { LearnComponent } from './learn/learn.component';
+import { BrewingMethodsComponent } from './brewing-methods/brewing-methods.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { FooterComponent } from './footer/footer.component';
     ShopComponent,
     AboutUsComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    LearnComponent,
+    BrewingMethodsComponent
     
   ],
   imports: [
