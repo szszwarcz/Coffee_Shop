@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {MatListModule} from '@angular/material/list';
 
 import {MatInputModule} from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
@@ -45,7 +46,8 @@ import { BrewingMethodsComponent } from './brewing-methods/brewing-methods.compo
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
   ],
 
   providers: [],
