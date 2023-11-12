@@ -11,13 +11,29 @@
   <a mat-button routerLink="shop">Shop</a>
   <a mat-button routerLink="aboutus">About us</a>
   <a mat-button routerLink="login">Login</a>
-  <a mat-button>
-    <mat-icon
-    class="material-symbols-outlined"
-    aria-hidden="false"
-    aria-label="Example home icon"
-    fontIcon="shopping_cart"
-  ></mat-icon>
-  </a>
+  <div class="dropdown">
+    <a 
+      class="btn btn-primary dropdown-toggle"
+      type="button"
+      id="dropdownMenuButton"
+      data-mdb-toggle="dropdown"
+      aria-expanded="false"
+      mat-button cDr routerLink="cart">
+        <mat-icon
+        class="material-symbols-outlined"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="shopping_cart"
+      ></mat-icon>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+      <ul *ngFor="let item of cartItems">
+        <li>{{item.productName}}</li>
+      </ul>
+      <div class="btn-group">
+        <button class="dropdown-item" routerLink="cart" type="button">Checkout</button>
+        <button class="dropdown-item" type="button">Edit Cart</button>
+      </div>
+    </div>
+  </div>
 </mat-toolbar>
-

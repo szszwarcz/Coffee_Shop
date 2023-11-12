@@ -20,6 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { LearnComponent } from './learn/learn.component';
 import { BrewingMethodsComponent } from './brewing-methods/brewing-methods.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { BrewingMethodsComponent } from './brewing-methods/brewing-methods.compo
     LoginComponent,
     FooterComponent,
     LearnComponent,
-    BrewingMethodsComponent
+    BrewingMethodsComponent,
+    CartComponent
     
   ],
   imports: [
