@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {MatListModule} from '@angular/material/list';
 
 import {MatInputModule} from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +21,6 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { LearnComponent } from './learn/learn.component';
 import { BrewingMethodsComponent } from './brewing-methods/brewing-methods.component';
-import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -33,8 +33,7 @@ import { CartComponent } from './cart/cart.component';
     LoginComponent,
     FooterComponent,
     LearnComponent,
-    BrewingMethodsComponent,
-    CartComponent
+    BrewingMethodsComponent
     
   ],
   imports: [
@@ -47,7 +46,8 @@ import { CartComponent } from './cart/cart.component';
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
   ],
 
   providers: [],

@@ -9,7 +9,14 @@ import { CartService } from '../cart.service';
 })
 export class NavbarComponent {
   cartItems:Product[] = [];
-  constructor(  private cartService : CartService){
+  sum:number = 0;
+  constructor(private cartService : CartService){
     this.cartItems = cartService.getCartItems();
+    
   }
+
+  onMouseOver(){
+    this.sum = this.cartService.sumPrice;
+  }
+  
 }

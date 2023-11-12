@@ -12,7 +12,7 @@
   <a mat-button routerLink="aboutus">About us</a>
   <a mat-button routerLink="login">Login</a>
   <div class="dropdown">
-    <a 
+    <a (mouseover)="onMouseOver()"
       class="btn btn-primary dropdown-toggle"
       type="button"
       id="dropdownMenuButton"
@@ -27,12 +27,21 @@
       ></mat-icon>
     </a>
     <div class="dropdown-menu dropdown-menu-right">
-      <ul *ngFor="let item of cartItems">
-        <li>{{item.productName}}</li>
-      </ul>
+      <mat-list *ngFor="let item of cartItems">
+        <mat-list-item>{{item.productName}} {{item.productPrice}}pln </mat-list-item>
+      </mat-list>
+      <div class="d-flex justify-content-center">
+        <p *ngIf="sum == 0">
+          Your cart is empty
+        </p>
+        <p *ngIf="sum != 0">
+          Your sum is: {{sum}}pln 
+        </p>
+
+      </div>
       <div class="btn-group">
-        <button class="dropdown-item" routerLink="cart" type="button">Checkout</button>
-        <button class="dropdown-item" type="button">Edit Cart</button>
+        <a class="dropdown-item" mat-button routerLink="cart" type="button">Checkout</a>
+        <a class="dropdown-item" mat-button routerLink="cart" type="button">Edit Cart</a>
       </div>
     </div>
   </div>
