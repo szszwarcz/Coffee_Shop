@@ -22,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LearnComponent } from './learn/learn.component';
 import { BrewingMethodsComponent } from './brewing-methods/brewing-methods.component';
 import { CartComponent } from './cart/cart.component';
+import { V60methodComponent } from './v60method/v60method.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CartComponent } from './cart/cart.component';
     FooterComponent,
     LearnComponent,
     BrewingMethodsComponent,
-    CartComponent
+    CartComponent,
+    V60methodComponent
     
   ],
   imports: [

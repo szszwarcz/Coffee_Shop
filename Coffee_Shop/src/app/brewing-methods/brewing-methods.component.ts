@@ -1,3 +1,4 @@
+import { BrewingMethods } from './../brewing-methods';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./brewing-methods.component.css']
 })
 export class BrewingMethodsComponent {
-
+  brewingMethods:BrewingMethods[] = [];
+  constructor(){
+  }
 }
