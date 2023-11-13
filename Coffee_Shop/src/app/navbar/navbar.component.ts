@@ -12,9 +12,7 @@ export class NavbarComponent {
   sum:number = 0;
   constructor(private cartService : CartService){
     this.cartItems = cartService.getCartItems();
-    
   }
-
   onMouseOver(){
     this.sum = this.cartService.sumPrice;
   }
